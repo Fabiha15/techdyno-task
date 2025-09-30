@@ -1,3 +1,41 @@
+export const cartData = [
+    {   id:1,
+        name: 'Sannai OpenArc Open-Ear Wireless',
+        description: 'Black & Orange',
+        prevPrice: '৳2,200',
+        newPrice: '৳2,140',
+        quantity: 1,
+        image: '/product.svg'
+    },
+      {
+        id:2,
+        name: 'Sannai OpenArc Open-Ear Wireless',
+        description: 'Black & Orange',
+        prevPrice: '৳2,200',
+        newPrice: '৳2,140',
+        quantity: 1,
+        image: '/product.svg'
+    },
+      {
+        id:3,
+        name: 'Sannai OpenArc Open-Ear Wireless',
+        description: 'Black & Orange',
+        prevPrice: '৳2,200',
+        newPrice: '৳2,140',
+        quantity: 1,
+        image: '/product.svg'
+    },
+      {
+        id:4,
+        name: 'Sannai OpenArc Open-Ear Wireless',
+        description: 'Black & Orange',
+        prevPrice: '৳2,200',
+        newPrice: '৳2,140',
+        quantity: 1,
+        image: '/product.svg'
+    }
+]
+
 export const navData = [
     {
         title: 'Fast Charger',

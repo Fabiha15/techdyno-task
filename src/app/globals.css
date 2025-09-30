@@ -6,9 +6,12 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-gray-50: #E8E8E8;
   --color-gray-500: #141414;
+  --color-white-400: #F4F4F4;
   --color-white-500: #ffffff;
   --color-white-800: #8c8c8c;
+  --color-white-900: #6B6B6B;
   --color-orange-100: #ffd1b0;
   --color-orange-300: #ff9c55;
   --color-orange-500: #ff6b01;

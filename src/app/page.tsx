@@ -1,9 +1,10 @@
+import Hero from "@/components/hero";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex justify-center items-center h-[1500px]" >
-      
+    <div className=" h-[1500px]" >
+      <Hero />
     </div>
   );
 }
