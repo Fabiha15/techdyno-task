@@ -101,3 +101,31 @@ export const companyData = [
         path: '/refund'
     },
 ]
+export const termsData = [
+    {
+        title: 'Warranty',
+        path: '/warranty'
+    },
+    {
+        title: 'Shipping & Delivery',
+        path: '/shipping'
+    },     
+      {
+        title: 'Privacy policy ',
+        path: '/privacy'
+    },
+      {
+        title: 'Terms & Condition',
+        path: '/terms'
+    },
+   
+    {
+        title: 'Return & refund policy',
+        path: '/refund'
+    },
+       
+      {
+        title: 'Track order',
+        path: '/trackorder'
+    },
+]
