@@ -1,7 +1,8 @@
 import { Cart } from "./Cart";
 import CustomerInfo from "./CustomerInfo";
+import Order from "./order";
 import Payment from "./Payment";
-import Promo from "./promo";
+
 import Shipping from "./shipping";
 
 const Hero = () => {
@@ -16,7 +17,7 @@ const Hero = () => {
         </div>
         <div className="flex flex-col w-[565px] gap-[9px] ">
           <Payment />
-          <Promo /> 
+          <Order />
         </div>
       </div>
     </div>
