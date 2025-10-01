@@ -6,16 +6,18 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-gray-50: #E8E8E8;
+  --color-gray-50: #e8e8e8;
+  --color-gray-300: #bbbaba;
+  --color-gray-400: #434343;
   --color-gray-500: #141414;
-  --color-white-400: #F4F4F4;
+  --color-white-400: #f4f4f4;
   --color-white-500: #ffffff;
   --color-white-800: #8c8c8c;
-  --color-white-900: #6B6B6B;
+  --color-white-900: #6b6b6b;
   --color-orange-100: #ffd1b0;
   --color-orange-300: #ff9c55;
   --color-orange-500: #ff6b01;
-  --color-black-50: #E7E7E7;
+  --color-black-50: #e7e7e7;
   --font-poppins: var(--font-poppins);
   /* --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -66,8 +68,8 @@ body {
 .content-wrapper {
   @apply w-[1708px]  mx-auto;
 }
-.border2{
-  @apply border border-red-500
+.border2 {
+  @apply border border-red-500;
 }
 /* 
 :root {
