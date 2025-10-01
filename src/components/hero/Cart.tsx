@@ -1,15 +1,12 @@
-import React from "react";
-import { Button } from "./ui/button";
-import { cartData } from "@/lib/data";
-import Product from "@/lib/type";
-import Image from "next/image";
+import { Button } from '@/components/ui/button';
+import { cartData } from '@/lib/data';
+import Product from '@/lib/type';
+import Image from 'next/image';
+import React from 'react'
 
-const Hero = () => {
+export const Cart = () => {
   return (
-    <div className="content-wrapper mt-[56px] mb-[75px] border2">
-      <p className="text-4xl font-semibold text-black">Shopping Cart</p>
-      <div className="flex mt-[26px] gap-[10px]">
-        <div className="flex flex-col w-[533px] px-[16px] py-[25px] border border-black-50 rounded-md">
+     <div className="flex flex-col w-[533px] px-[16px] py-[25px] border border-black-50 rounded-md">
           <div className="flex items-center justify-between ">
             <p className="text-2xl font-medium text-black">In Your Cart</p>
             <Button className="w-[121px] px-4 py-[10px]  bg-gray-50">
@@ -84,7 +81,7 @@ const Hero = () => {
                             <p className="text-base font-normal text-gray-500">
                               {item.quantity}
                             </p>
-                             <div className="w-[19px] h-[18px] flex items-center justify-center bg-black  rounded-full">
+                            <div className="w-[19px] h-[18px] flex items-center justify-center bg-black  rounded-full">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="11"
@@ -125,9 +122,6 @@ const Hero = () => {
               })}
           </div>
         </div>
-      </div>
-    </div>
-  );
-};
+  )
+}
 
-export default Hero;
