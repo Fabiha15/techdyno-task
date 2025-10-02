@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "../ui/button";
-import ComapreProducts from "./ComapreProducts";
+import CompareProducts from "./CompareProducts";
+import { featureDetails, features } from "@/lib/data";
 
 const Compare = () => {
   return (
@@ -27,8 +28,15 @@ const Compare = () => {
           <p className="text-sm font-normal text-white-900">Share</p>
         </Button>
       </div>
-      <ComapreProducts />
-     
+      <CompareProducts features={features} featureDetails={featureDetails} />
+      <div className=" w-[1308px] flex items-center justify-center gap-2 mt-[22px]">
+        <Button className="w-[213px] h-[52px] rounded-full flex items-center justify-center gap-3 py-2 px-[14px] bg-white-400  text-lg font-medium text-gray-500 ">
+          Remove
+        </Button>
+        <Button className="w-[213px] h-[52px] rounded-full flex items-center justify-center gap-3 py-2 px-[14px] bg-orange-500  text-lg font-medium text-white">
+          Shop Now
+        </Button>
+      </div>
     </div>
   );
 };

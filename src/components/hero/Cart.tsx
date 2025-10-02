@@ -48,7 +48,7 @@ export const Cart = () => {
                         {item.description}
                       </p>
                       <div className="flex items-center gap-2">
-                        <p className="text-lg font-semibold text-orange-500">
+                        <p className="text-lg font-semibold text-orange-500 line-through">
                           {item.prevPrice}
                         </p>
                         <p className="text-xs font-semibold text-white-800">

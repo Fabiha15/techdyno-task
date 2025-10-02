@@ -204,10 +204,20 @@ export const paymentMethod = [
   },
 ];
 export const features = [
+  "Brand",
   "Model",
   "Watt",
   "Interface / Port",
   "Cable",
   "Plug",
   "Other Features",
+];
+export const featureDetails = [
+  "Sannai Technology",
+  "USB-C Power Adapter",
+  "20W",
+  "USB-C",
+  "No",
+  "2 Pin | 3 Pin",
+  "Fast charging | Optimal charging performance | Works with iPhone,  AirPods, iPad, and Apple Watch",
 ];
