@@ -203,3 +203,11 @@ export const paymentMethod = [
     height: 33.906
   },
 ];
+export const features = [
+  "Model",
+  "Watt",
+  "Interface / Port",
+  "Cable",
+  "Plug",
+  "Other Features",
+];
