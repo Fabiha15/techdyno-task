@@ -1,14 +1,18 @@
-import React from "react";
-import { RadioGroup, RadioGroupItem } from "../ui/radio-group";
 import { paymentMethod } from "@/lib/data";
 import Image from "next/image";
+import { Button } from "../ui/button";
 import { Checkbox } from "../ui/checkbox";
 import { Input } from "../ui/input";
-import { Button } from "../ui/button";
+import { RadioGroup, RadioGroupItem } from "../ui/radio-group";
+import Order from "./Order";
 
-const Payment = () => {
+
+
+export const OrderSummary = () => {
   return (
-    <div className="grid gap-[9px]">
+    <div className="grid gap-[9px] w-[565px]">
+
+      {/* payment method */}
       <div className="flex flex-col  rounded-md px-[18px] py-[40.69px] border border-black-50 ">
         <p className="text-2xl font-medium text-gray-500">Payment Method</p>
         <div className="grid gap-[40.69px] mt-[49.73px]">
@@ -68,6 +72,8 @@ const Payment = () => {
           </div>
         </div>
       </div>
+
+      {/* Promo Code */}
       <div className="flex flex-col  rounded-md px-[18px] py-[20px] border border-black-50 ">
         <p className="text-2xl font-medium text-gray-500 mb-[21px]">
           Promo Code
@@ -82,8 +88,10 @@ const Payment = () => {
           </Button>
         </div>
       </div>
+      {/* Order Summary */}
+      <Order />
     </div>
   );
 };
 
-export default Payment;
+

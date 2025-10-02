@@ -3,6 +3,7 @@ import { Input } from "../ui/input";
 
 const CustomerInfo = () => {
   return (
+    
     <div className="flex flex-col gap-[26.86px] rounded-md pt-9 pb-[18px] px-[18px] border border-black-50 ">
       <p className="text-2xl font-medium text-black">Customer Information</p>
       <div>

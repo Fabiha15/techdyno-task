@@ -48,11 +48,11 @@ export const Cart = () => {
                         {item.description}
                       </p>
                       <div className="flex items-center gap-2">
-                        <p className="text-lg font-semibold text-orange-500 line-through">
-                          {item.prevPrice}
+                        <p className="text-lg font-semibold text-orange-500 ">
+                           {item.newPrice}
                         </p>
-                        <p className="text-xs font-semibold text-white-800">
-                          {item.newPrice}
+                        <p className="text-xs font-semibold text-white-800 line-through">
+                          {item.prevPrice}
                         </p>
                       </div>
                       <div className="flex items-center justify-between">

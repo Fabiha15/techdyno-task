@@ -1,10 +1,29 @@
+import { navData } from "@/lib/data";
 import Image from "next/image";
+import Link from "next/link";
 import { Input } from "./ui/input";
-import Navbar from "./navbar";
 
+const Navbar = () => {
+  return (
+    <div className="flex items-center gap-8 content-wrapper  ">
+      {navData.map((item: { title: string; path: string }) => {
+        return (
+          <Link
+            key={item.path}
+            href={item.path}
+            className="text-white-500 text-base font-medium hover:underline"
+          >
+            {item.title}
+          </Link>
+        );
+      })}
+    </div>
+  );
+};
 const Header = () => {
   return (
     <div className="flex flex-col ">
+      {/* top bar */}
       <div className="h-[28px] py-[6px]  bg-gray-500 text-white-500 ">
         <div className="flex gap-9 content-wrapper text-xs font-light">
           <h1>Contact us 24/7 : +00854789956</h1>
@@ -18,6 +37,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+      {/* middle header */}
       <div className="h-[104px] bg-white-500 py-7 ">
         <div className="content-wrapper flex  items-center  ">
           <div className=" flex justify-between h-12 w-[1153px]  ">
@@ -84,7 +104,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-
+      {/* navbar */}
       <div className="h-[53px]  bg-orange-500 text-white-500 py-[15px]">
         <Navbar />
       </div>
