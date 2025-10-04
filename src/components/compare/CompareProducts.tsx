@@ -1,8 +1,6 @@
 import Image from "next/image";
 import { Input } from "../ui/input";
-// Assuming 'Input' component is available
 
-// --- Reusable Components (Simplified) ---
 
 const SearchBar = () => (
   <div className="flex  items-center justify-between bg-white-400  h-12 rounded-full ">
@@ -51,7 +49,7 @@ const EmptyHeaderContent = () => (
   </>
 );
 
-// --- Main Component using <table> ---
+// --- Main Component 
 
 export default function CompareProducts({
   features,

@@ -25,7 +25,7 @@ const Footer = () => {
             on quality, creativity, and customer - satisfaction. We believe in
             building experiences - that inspire growth and trust.
           </h1>
-          <div className="flex items-center justify-between  bg-white-500 rounded-md h-[48px] mt-[31px] px-[5px] py-[6px]">
+          <div className="flex items-center justify-between  bg-white-500 rounded-md h-[48px] mt-[26px] px-[5px] py-[6px]">
             <Input
               placeholder="Enter your email"
               className=" w-1/2 h-full bg-white-500  text-base font-normal opacity-70 "
@@ -34,7 +34,7 @@ const Footer = () => {
               Subscribe
             </Button>
           </div>
-          <div className="flex justify-between h-[40px] gap-[18px] mt-[21px] mb-[37px]">
+          <div className="flex justify-between h-[40px] gap-[18px] mt-[21px] mb-[37px] ">
             <div className="w-[120px]  p-[7px] flex items-center gap-[2px] rounded-md bg-white-500">
               <div className="h-[21px] w-[17px] relative ">
                 <Image fill src="/apple.svg" alt="apple" />
@@ -76,39 +76,45 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex items-center  gap-6">
-            {/* Label */}
             <h1 className=" text-white text-base font-medium">Follow Us:</h1>
 
             {/* Social Icons */}
-            <div className="flex items-center   gap-3">
-              {socialIcons.map((item: { icon: string; path: string }) => (
-                <Link
-                  key={item.path}
-                  href={item.path}
-                  target="_blank"
-                  className="flex  items-center justify-center h-8 w-8 rounded-full bg-white hover:bg-gray-200 transition-colors duration-200"
-                >
-                  <Image
-                    height={30}
-                    width={20}
-                    src={`/${item.icon}.svg`}
-                    alt={item.icon}
-                  />
-                </Link>
-              ))}
+            <div className="flex items-center   gap-4">
+              {socialIcons.map(
+                (item: {
+                  icon: string;
+                  path: string;
+                  width: number;
+                  height: number;
+                }) => (
+                  <Link
+                    key={item.path}
+                    href={item.path}
+                    target="_blank"
+                    className="flex  items-center justify-center h-8 w-8 rounded-full bg-white hover:bg-gray-200 transition-colors duration-200"
+                  >
+                    <Image
+                      height={item.height}
+                      width={item.width}
+                      src={`/${item.icon}.svg`}
+                      alt={item.icon}
+                    />
+                  </Link>
+                )
+              )}
             </div>
           </div>
         </div>
         <div className="flex justify-between gap-[114px]   ">
           {/* Company Section */}
-          <div className="w-[177px]">
-            <h1 className="text-white text-xl font-semibold mb-6">Company</h1>
+          <div className="w-[177px]  ">
+            <h1 className="text-white text-xl font-semibold   mb-6">Company</h1>
             <ul className="space-y-3">
               {companyData.map(({ title, path }) => (
                 <li key={path}>
                   <Link
                     href={path}
-                    className="text-white text-base font-normal hover:underline transition-colors duration-200"
+                    className="text-white text-base font-normal hover:underline "
                   >
                     {title}
                   </Link>
@@ -116,6 +122,7 @@ const Footer = () => {
               ))}
             </ul>
           </div>
+          {/* Terms Section */}
           <div className="w-[177px]">
             <h1 className="text-white text-xl font-semibold mb-6">Terms</h1>
             <ul className="space-y-3">
@@ -123,7 +130,7 @@ const Footer = () => {
                 <li key={path}>
                   <Link
                     href={path}
-                    className="text-white text-base font-normal hover:underline transition-colors duration-200"
+                    className="text-white text-base font-normal hover:underline "
                   >
                     {title}
                   </Link>
@@ -227,12 +234,11 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    
-       <div className="h-[1px] bg-white-800 content-wrapper mt-[26px]"></div>
-      <p className=" text-base font-normal text-center text-black-50 pt-[23px] mb-[36px]">
-       © Copyright - | Techdynobd.com | Designed & Developed by TechTeams.com
+
+      <div className="h-[1px] bg-white-800 content-wrapper mt-[26px] "></div>
+      <p className=" text-base font-normal text-center  text-black-50 pt-[23px] ">
+        © Copyright - | Techdynobd.com | Designed & Developed by TechTeams.com
       </p>
-    
     </div>
   );
 };

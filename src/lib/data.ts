@@ -84,19 +84,27 @@ export const socialIcons = [
   {
     icon: "Facebook",
     path: "/facebook",
+    width: 32,
+    height: 32,
   },
 
   {
     icon: "Instagram",
     path: "/instagram",
+    width: 21,
+    height: 21,
   },
   {
     icon: "X",
     path: "/x",
+    width: 17,
+    height: 17,
   },
   {
     icon: "Youtube",
     path: "/youtube",
+    width: 21,
+    height: 14,
   },
 ];
 export const companyData = [
@@ -172,35 +180,35 @@ export const paymentMethod = [
     name: "visa",
     image: "/visa.svg",
     width: 44.83,
-    height: 14.728
+    height: 14.728,
   },
   {
     id: 2,
     name: "mastercard",
     image: "/mastercard.svg",
-     width: 42.113,
-    height: 25.241
+    width: 42.113,
+    height: 25.241,
   },
   {
     id: 3,
     name: "nagad",
     image: "/nagad.svg",
-     width:  42.798,
-    height: 18.693
+    width: 42.798,
+    height: 18.693,
   },
   {
     id: 4,
     name: "bkash",
     image: "/bkash.svg",
-     width: 41.738,
-    height: 19.159
+    width: 41.738,
+    height: 19.159,
   },
   {
     id: 5,
     name: "upay",
     image: "/upay.svg",
-     width: 33.906,
-    height: 33.906
+    width: 33.906,
+    height: 33.906,
   },
 ];
 export const features = [
