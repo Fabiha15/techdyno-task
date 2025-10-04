@@ -22,9 +22,9 @@ const Order = () => {
             <p className="text-lg font-medium text-gray-400">Discount : </p>
             <p className="text-[27px] font-normal text-black">৳ 10</p>
           </div>
-          <div className="flex items-center justify-between bg-white-400 py-[20px] px-[11px] ">
-             <p className="text-[20px] font-semibold text-orange-500">Total Amount : </p>
-            <p className="text-[27px] font-normal text-black">৳ 890</p>
+          <div className="flex items-center justify-between text-orange-500 bg-white-400 py-[20px] px-[11px] ">
+             <p className="text-[20px] font-semibold ">Total Amount : </p>
+            <p className="text-[27px] font-normal ">৳ 890</p>
           </div>
         </div>
       </div>
