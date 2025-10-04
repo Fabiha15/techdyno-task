@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "../ui/button";
-import CompareProducts from "./CompareProducts";
+import CompareProducts from "./CompareProductsTable";
 import { featureDetails, features } from "@/lib/data";
 
 const Compare = () => {

@@ -1,14 +1,13 @@
 import Image from "next/image";
 import { Input } from "../ui/input";
 
-
 const SearchBar = () => (
-  <div className="flex  items-center justify-between bg-white-400  h-12 rounded-full ">
+  <div className="flex  items-center  justify-between bg-white-400  h-12 rounded-full ">
     <Input
       placeholder="Search your favorite accessories"
       className="h-full w-2/3   text-xs font-light text-gray-400  "
     />
-    <button className="h-9 w-9 mr-3 flex   items-center justify-center rounded-full  bg-orange-500">
+    <button className="h-9 w-9 mr-[6px] flex   items-center justify-center rounded-full  bg-orange-500">
       <div className="h-4 w-4 relative  ">
         <Image fill src="/search.svg" alt="search" />
       </div>
@@ -49,7 +48,7 @@ const EmptyHeaderContent = () => (
   </>
 );
 
-// --- Main Component 
+// --- Main Component
 
 export default function CompareProducts({
   features,
