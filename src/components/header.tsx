@@ -63,7 +63,7 @@ const Header = () => {
               </div>
 
               <span className="text-base font-medium text-orange-500">
-                Offer's
+                Offer&apos;s
               </span>
             </div>
           </div>
