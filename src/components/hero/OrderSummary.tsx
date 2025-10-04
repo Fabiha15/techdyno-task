@@ -4,7 +4,8 @@ import { Button } from "../ui/button";
 import { Checkbox } from "../ui/checkbox";
 import { Input } from "../ui/input";
 import { RadioGroup, RadioGroupItem } from "../ui/radio-group";
-import Order from "./Order";
+import Order from "./order";
+
 
 
 export const OrderSummary = () => {
