@@ -7,11 +7,9 @@ import { RadioGroup, RadioGroupItem } from "../ui/radio-group";
 import Order from "./Order";
 
 
-
 export const OrderSummary = () => {
   return (
     <div className="grid gap-[9px] w-[565px]">
-
       {/* payment method */}
       <div className="flex flex-col  rounded-md px-[18px] py-[40.69px] border border-black-50 ">
         <p className="text-2xl font-medium text-gray-500">Payment Method</p>
@@ -93,5 +91,3 @@ export const OrderSummary = () => {
     </div>
   );
 };
-
-
